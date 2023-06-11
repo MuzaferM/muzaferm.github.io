@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap");
+
+/* ---- Base Rules ---- */
+
+:root {
+  --primary-color: #ea2626;
+  --dark-color: #544179;
+  --light-color: #fbffe2;
+  --github-color: #171515;
+  --linkedin-color: #0077b5;
+  --stackoverflow-color: #f48225;
+  --leetcode-color: #fea116;
+  --max-width: 1500px;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  letter-spacing: 1.4px;
+  color: var(--light-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Large Screens */
+@media only screen and (min-width: 1500px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+/* tiny Screens */
+@media only screen and (max-width: 360px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+/* ---- General Typography Rules ---- */
+
+p {
+  line-height: 1.6em;
+}
+
+/* ---- Layout Rules ---- */
+
+main {
+  margin: 5vh 1em 5vh;
+}
+
+@media only screen and (min-width: 700px) {
+  main {
+    margin: 10vh 2vw;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: var(--primary-color);
+  background-attachment: fixed;
+  background-image: linear-gradient(270deg,#1B1417,#140F12)
+}
